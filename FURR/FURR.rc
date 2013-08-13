@@ -1,0 +1,435 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FURRMAINDLG DIALOGEX 0, 0, 538, 212
+STYLE DS_SETFONT | DS_CENTER | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "FURR v1.0"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+END
+
+IDD_SESSIONPREPARE DIALOGEX 0, 0, 275, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "&Cancel",IDCANCEL,77,63,57,15
+    GROUPBOX        "Progress",IDC_STATIC,6,3,263,52
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x0,14,29,246,16
+    LTEXT           "",IDC_STATUSTEXT,17,16,244,11
+    DEFPUSHBUTTON   "&Run Session",IDC_DONE,141,63,57,15
+END
+
+IDD_RUNSESSION DIALOGEX 0, 0, 327, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
+CAPTION "FURR - Recording session in progress"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Session parameters",IDC_STATIC,8,4,310,83
+    LTEXT           "Display resolution:",IDC_STATIC,15,19,66,9
+    LTEXT           "Frame resolution:",IDC_STATIC,15,32,66,9
+    LTEXT           "Colour depth:",IDC_STATIC,15,45,66,9
+    LTEXT           "Exposure time(s):",IDC_STATIC,15,58,63,9
+    LTEXT           "",IDC_DISPLAYRES,92,19,218,9
+    LTEXT           "",IDC_FRAMERES,92,32,218,9
+    LTEXT           "",IDC_EXPOSURETIME,92,58,218,9
+    LTEXT           "",IDC_COLOURDEPTH,92,45,218,9
+    GROUPBOX        "Progress",IDC_STATIC,8,95,310,76
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x1,14,149,297,16,
+                    WS_EX_STATICEDGE
+    LTEXT           "Current frame:",IDC_STATIC,14,108,53,9
+    LTEXT           "",IDC_STATUSTEXT,76,108,233,9
+    LTEXT           "Elapsed time:",IDC_STATIC,14,120,53,9
+    LTEXT           "Remaining time:",IDC_STATIC,14,132,53,9
+    LTEXT           "",IDC_ELAPSEDTIME,76,120,233,9
+    LTEXT           "",IDC_REMAININGTIME,76,132,233,9
+    PUSHBUTTON      "&ABORT",IDCANCEL,103,180,57,15
+    DEFPUSHBUTTON   "&Finished",IDOK,167,180,57,15,WS_DISABLED
+    LTEXT           "Session Mode:",IDC_STATIC,15,71,55,9
+    LTEXT           "",IDC_MODE,92,70,218,9
+END
+
+IDD_ADJUSTPARAMS DIALOGEX 0, 0, 408, 202
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FURR - Film Parameters"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,349,181,52,14
+    PUSHBUTTON      "Load &File...",IDC_LOADPARAMS,8,181,70,14
+    PUSHBUTTON      "&Save As...",IDC_SAVEPARAMS,84,181,70,14
+    PUSHBUTTON      "Load &Defaults",IDC_LOADDEFAULTS,160,181,70,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,291,181,52,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,174,393,1
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | 
+                    WS_TABSTOP,7,9,89,161,WS_EX_STATICEDGE
+END
+
+IDD_CAMERACONTROLS DIALOGEX 0, 0, 192, 196
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FURR - Camera Controls"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&Forward",IDC_STEPFWD,28,20,57,15
+    PUSHBUTTON      "&Reverse",IDC_STEPREV,105,20,57,15
+    PUSHBUTTON      "Wind Fo&rward",IDC_WINDFWD,16,69,72,15
+    EDITTEXT        IDC_WINDFWDFRAMES,96,70,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "Wind &Backwards",IDC_WINDREV,16,91,72,15
+    EDITTEXT        IDC_WINDREVFRAMES,96,92,47,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER | NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "&Zero Step Accumulator",IDC_ZEROACCUMULATOR,21,142,149,
+                    15
+    PUSHBUTTON      "&Close",IDCANCEL,136,174,46,15
+    GROUPBOX        "Step Frame",IDC_STATIC,8,5,173,39
+    GROUPBOX        "Wind",IDC_STATIC,9,51,173,68
+    LTEXT           "frames",IDC_STATIC,151,72,23,10
+    LTEXT           "frames",IDC_STATIC,151,93,24,10
+    GROUPBOX        "Step Accumulator",IDC_STATIC,9,127,173,39
+END
+
+IDD_PREFERENCES DIALOGEX 0, 0, 117, 121
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "FURR Preferences"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Lock Settings",IDC_CHKLOCKSETTINGS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,17,22,58,10
+    CONTROL         "Vista Mode",IDC_CHKVISTAMODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,35,54,10
+    EDITTEXT        IDC_ID,73,52,26,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_IE,73,72,26,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,67,97,40,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,20,97,40,14
+    LTEXT           "Exposure Time:",IDC_LBLEXPOSURETIME,17,54,51,11
+    LTEXT           "Exposure Delay:",IDC_LBLEXPOSUREDELAY,17,74,53,11
+    GROUPBOX        "Driver Preferences",IDC_STATIC,9,9,99,83
+END
+
+IDD_AP_PAGEGLOBAL DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_RESOLUTION,62,28,112,62,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BITDEPTH,221,28,68,51,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Choose LU&T...",IDC_CHOOSELUT,22,72,70,14
+    PUSHBUTTON      "&Clear LUT",IDC_CLEARLUT,22,91,70,14
+    CONTROL         "Channel &Split",IDC_CHANNELSPLIT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,40,132,63,9
+    CONTROL         "Color &Wheel",IDC_COLORWHEEL,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,125,132,63,9
+    CONTROL         "&Full Image",IDC_FULLIMAGE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,210,132,63,9
+    GROUPBOX        "Image Settings",IDC_STATUSTEXT,15,15,281,36
+    LTEXT           "Resolution:",IDC_STATIC,22,30,38,12
+    LTEXT           "Bit Depth:",IDC_STATIC,184,30,35,10
+    GROUPBOX        "LUT Settings",IDC_STATIC,15,57,281,55
+    CTEXT           "",IDC_LUTFILE,104,82,184,13,SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Global Settings",IDC_STATIC,8,2,297,154
+    GROUPBOX        "Mode",IDC_STATIC,15,118,281,31
+END
+
+IDD_AP_PAGERED DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,35,185,12
+    CONTROL         "",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,53,185,12
+    EDITTEXT        IDC_GAMMA,109,69,49,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,109,116,38,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "RED Channel Settings",IDC_STATIC,8,2,297,154
+    LTEXT           "Brightness (-100 to 100):",IDC_STATIC,25,36,83,10
+    LTEXT           "Contrast (-100 to 100):",IDC_STATIC,25,53,79,11
+    GROUPBOX        "Exposure Settings",IDC_STATIC,17,101,279,38
+    GROUPBOX        "Color Adjustment",IDC_STATIC,17,21,279,70
+    LTEXT           "Exposure Time:",IDC_STATIC,25,118,58,9
+    LTEXT           "Gamma:",IDC_STATIC,25,70,35,10
+    LTEXT           "milliseconds",IDC_STATIC,156,118,41,9
+END
+
+IDD_AP_PAGEGREEN DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,35,185,12
+    CONTROL         "",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,53,185,12
+    EDITTEXT        IDC_GAMMA,109,69,49,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,109,116,38,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "GREEN Channel Settings",IDC_STATIC,8,2,297,154
+    LTEXT           "Brightness (-100 to 100):",IDC_STATIC,25,36,83,10
+    LTEXT           "Contrast (-100 to 100):",IDC_STATIC,25,53,79,11
+    GROUPBOX        "Exposure Settings",IDC_STATIC,17,101,279,38
+    GROUPBOX        "Color Adjustment",IDC_STATIC,17,21,279,70
+    LTEXT           "Exposure Time:",IDC_STATIC,25,118,58,9
+    LTEXT           "Gamma:",IDC_STATIC,25,70,35,10
+    LTEXT           "milliseconds",IDC_STATIC,156,118,41,9
+END
+
+IDD_AP_PAGEBLUE DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,35,185,12
+    CONTROL         "",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,53,185,12
+    EDITTEXT        IDC_GAMMA,109,69,49,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,109,116,38,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "BLUE Channel Settings",IDC_STATIC,8,2,297,154
+    LTEXT           "Brightness (-100 to 100):",IDC_STATIC,25,36,83,10
+    LTEXT           "Contrast (-100 to 100):",IDC_STATIC,25,53,79,11
+    GROUPBOX        "Exposure Settings",IDC_STATIC,17,101,279,38
+    GROUPBOX        "Color Adjustment",IDC_STATIC,17,21,279,70
+    LTEXT           "Exposure Time:",IDC_STATIC,25,118,58,9
+    LTEXT           "Gamma:",IDC_STATIC,25,70,35,10
+    LTEXT           "milliseconds",IDC_STATIC,156,118,41,9
+END
+
+IDD_AP_PAGEFULLIMAGE DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ET,109,116,38,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Full Image Settings",IDC_STATIC,8,2,297,154
+    GROUPBOX        "Exposure Settings",IDC_STATIC,17,101,279,38
+    GROUPBOX        "Color Adjustment",IDC_STATIC,17,21,279,70
+    LTEXT           "Exposure Time:",IDC_STATIC,25,118,58,9
+    LTEXT           "milliseconds",IDC_STATIC,156,118,41,9
+    LTEXT           "To set brightness, contrast, and gamma settings for R/G/B channels, use the Per-channel setting pages.",
+                    IDC_STATIC,28,49,257,20,WS_DISABLED
+END
+
+IDD_AP_PAGEWEDGE DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "...",IDC_BROWSE,270,30,18,12,BS_FLAT
+    EDITTEXT        IDC_STARTEXPOSURETIME,113,90,38,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_STEPEXPOSURETIME,113,108,38,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_ENDEXPOSURETIME,113,127,38,13,ES_CENTER | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Wedge Settings",IDC_STATIC,8,2,297,154
+    LTEXT           "Starting Exposure Time:",IDC_STATIC,25,91,78,11
+    LTEXT           "milliseconds",IDC_STATIC,159,91,42,9
+    LTEXT           "Step Per Iteration:",IDC_STATIC,25,110,66,10
+    LTEXT           "milliseconds",IDC_STATIC,159,110,42,9
+    LTEXT           "Ending Exposure Time:",IDC_STATIC,25,129,79,9
+    LTEXT           "milliseconds",IDC_STATIC,159,129,42,9
+    GROUPBOX        "Time Settings",IDC_STATIC,15,76,281,71
+    GROUPBOX        "General Settings",IDC_STATIC,16,15,281,56
+    LTEXT           "Wedge Image File:",IDC_STATIC,25,31,68,8
+    EDITTEXT        IDC_WEDGEFILE,90,30,176,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    LTEXT           "Steps in Session:",IDC_STATIC,25,51,61,9
+    EDITTEXT        IDC_STEPS,90,50,37,12,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+END
+
+IDD_AP_PAGEBW DIALOGEX 0, 0, 314, 161
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_BRIGHTNESS,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,35,185,12
+    CONTROL         "",IDC_CONTRAST,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | TBS_TOOLTIPS | WS_TABSTOP,106,53,185,12
+    EDITTEXT        IDC_GAMMA,109,69,49,13,ES_CENTER | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ET,109,116,38,12,ES_CENTER | ES_AUTOHSCROLL
+    GROUPBOX        "Black and White settings",IDC_STATIC,8,2,297,154
+    LTEXT           "Brightness (-100 to 100):",IDC_STATIC,25,36,83,10
+    LTEXT           "Contrast (-100 to 100):",IDC_STATIC,25,53,79,11
+    GROUPBOX        "Exposure Settings",IDC_STATIC,17,101,279,38
+    GROUPBOX        "Color Adjustment",IDC_STATIC,17,21,279,70
+    LTEXT           "Exposure Time:",IDC_STATIC,25,118,58,9
+    LTEXT           "Gamma:",IDC_STATIC,25,70,35,10
+    LTEXT           "milliseconds",IDC_STATIC,156,118,41,9
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAINICON            ICON                    "bluematrix.ico"
+IDI_FRS_ERROR           ICON                    "Stop.ico"
+IDI_FRS_WARNING         ICON                    "Caution.ico"
+IDI_FRS_INFORMATION     ICON                    "Reminder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FURRMAIN MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New Session\tCtrl+N",        ID_FILE_NEWSESSION
+        MENUITEM "New &Wedge Session",          ID_FILE_NEWWEDGESESSION
+        POPUP "&Log"
+        BEGIN
+            MENUITEM "&Clear log\tCtrl+Shft+C",     ID_LOG_CLEARLOG
+            MENUITEM "&Save log\tCtrl+S",           ID_LOG_SAVELOG
+        END
+        MENUITEM "&Exit\tCtrl+Q",               ID_FILE_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Session settings\tCtrl+Alt+S", ID_TOOLS_SESSIONSETTINGS
+        MENUITEM "&Camera controls\tCtrl+Alt+C", ID_TOOLS_CAMERACONTROLS
+        MENUITEM "&Preferences",                ID_TOOLS_PREFERENCES
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "FURR.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_RUNSESSION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 326
+        BOTTOMMARGIN, 204
+    END
+
+    IDD_CAMERACONTROLS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 191
+    END
+
+    IDD_AP_PAGEGLOBAL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_AP_PAGEFULLIMAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_INVISCUR            CURSOR                  "inviscur.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINACCELERATOR ACCELERATORS 
+BEGIN
+    "Q",            ID_FILE_EXIT,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEWSESSION,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_LOG_CLEARLOG,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    "S",            ID_LOG_SAVELOG,         VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_TOOLS_CAMERACONTROLS, VIRTKEY, CONTROL, ALT, NOINVERT
+    "S",            ID_TOOLS_SESSIONSETTINGS, VIRTKEY, CONTROL, ALT, 
+                                                    NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

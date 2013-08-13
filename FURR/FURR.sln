@@ -1,0 +1,110 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FURR", "FURR.vcproj", "{C96448BE-09AD-4890-B9A4-D76532D54212}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F57277C2-F9F9-4433-A751-C27926284541} = {F57277C2-F9F9-4433-A751-C27926284541}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "wlib", "..\wlib\wlib.vcproj", "{F57277C2-F9F9-4433-A751-C27926284541}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		ANSI Multithread = ANSI Multithread
+		ANSI Multithread DLL = ANSI Multithread DLL
+		ANSI Singlethread = ANSI Singlethread
+		Dbg ANSI Multithread = Dbg ANSI Multithread
+		Dbg ANSI Multithread DLL = Dbg ANSI Multithread DLL
+		Dbg ANSI Singlethread = Dbg ANSI Singlethread
+		Dbg UNICODE Multithread = Dbg UNICODE Multithread
+		Dbg UNICODE Multithread DLL = Dbg UNICODE Multithread DLL
+		Dbg UNICODE Singlethread = Dbg UNICODE Singlethread
+		Debug = Debug
+		Debug ANSI = Debug ANSI
+		Debug Unicode = Debug Unicode
+		Release = Release
+		Release ANSI = Release ANSI
+		Release Unicode = Release Unicode
+		UNICODE Multithread = UNICODE Multithread
+		UNICODE Multithread DLL = UNICODE Multithread DLL
+		UNICODE Singlethread = UNICODE Singlethread
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Multithread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Multithread.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Multithread DLL.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Multithread DLL.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Singlethread.ActiveCfg = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.ANSI Singlethread.Build.0 = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Multithread.ActiveCfg = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Multithread.Build.0 = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Multithread DLL.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Multithread DLL.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Singlethread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg ANSI Singlethread.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Multithread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Multithread.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Multithread DLL.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Multithread DLL.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Singlethread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Dbg UNICODE Singlethread.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug ANSI.ActiveCfg = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug ANSI.Build.0 = Debug ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug Unicode.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Debug Unicode.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release.ActiveCfg = Release Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release.Build.0 = Release Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release ANSI.ActiveCfg = Release ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release ANSI.Build.0 = Release ANSI|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release Unicode.ActiveCfg = Release Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.Release Unicode.Build.0 = Release Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Multithread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Multithread.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Multithread DLL.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Multithread DLL.Build.0 = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Singlethread.ActiveCfg = Debug Unicode|Win32
+		{C96448BE-09AD-4890-B9A4-D76532D54212}.UNICODE Singlethread.Build.0 = Debug Unicode|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Multithread.ActiveCfg = ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Multithread.Build.0 = ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Multithread DLL.ActiveCfg = ANSI Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Multithread DLL.Build.0 = ANSI Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Singlethread.ActiveCfg = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.ANSI Singlethread.Build.0 = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Multithread.ActiveCfg = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Multithread.Build.0 = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Multithread DLL.ActiveCfg = Dbg ANSI Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Multithread DLL.Build.0 = Dbg ANSI Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Singlethread.ActiveCfg = Dbg ANSI Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg ANSI Singlethread.Build.0 = Dbg ANSI Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Multithread.ActiveCfg = Dbg UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Multithread.Build.0 = Dbg UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Multithread DLL.ActiveCfg = Dbg UNICODE Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Multithread DLL.Build.0 = Dbg UNICODE Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Singlethread.ActiveCfg = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Dbg UNICODE Singlethread.Build.0 = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug.ActiveCfg = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug.Build.0 = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug ANSI.ActiveCfg = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug ANSI.Build.0 = Dbg ANSI Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug Unicode.ActiveCfg = Dbg UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Debug Unicode.Build.0 = Dbg UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release.ActiveCfg = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release.Build.0 = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release ANSI.ActiveCfg = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release ANSI.Build.0 = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release Unicode.ActiveCfg = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.Release Unicode.Build.0 = Dbg UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Multithread.ActiveCfg = UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Multithread.Build.0 = UNICODE Multithread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Multithread DLL.ActiveCfg = UNICODE Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Multithread DLL.Build.0 = UNICODE Multithread DLL|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Singlethread.ActiveCfg = UNICODE Singlethread|Win32
+		{F57277C2-F9F9-4433-A751-C27926284541}.UNICODE Singlethread.Build.0 = UNICODE Singlethread|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

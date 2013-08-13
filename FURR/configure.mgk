@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<configuremap>
+  <configure name="HOST" value="i686-pc-linux-gnu" />
+  <configure name="CONFIGURE" value="./configure " />
+  <configure name="PREFIX" value="/usr/local" />
+  <configure name="EXEC-PREFIX" value="/usr/local" />
+  <configure name="CC" value="gcc" />
+  <configure name="CFLAGS" value="-g -O2 -Wall -pthread" />
+  <configure name="CPPFLAGS" value="-I/usr/local/include" />
+  <configure name="LDFLAGS" value="-L/usr/local/lib -L/usr/X11R6/lib -lfreetype -lz -L/usr/lib" />
+  <configure name="LIBS" value="-lMagick -llcms -ltiff -lfreetype -ljpeg -lpng -ldpstk -ldps -lXext -lXt -lSM -lICE -lX11 -lbz2 -lxml2 -lz -lpthread -lm -lpthread" />
+  <configure name="CXX" value="g++" />
+  <configure name="CXXFLAGS" value="-pthread" />
+  <configure name="NAME" value="ImageMagick" />
+  <configure name="VERSION" value="6.0.2" />
+  <configure name="LIB_VERSION" value="0x602" />
+  <configure name="LIB_VERSION_NUMBER" value="6,0,2,0" />
+  <configure name="RELEASE_DATE" value="06/10/04" />
+  <configure name="COPYRIGHT" value="Copyright (C) 1999-2004 ImageMagick Studio LLC" />
+  <configure name="WEBSITE" value="http://www.imagemagick.org" />
+  <configure name="QuantumDepth" value="16" />
+</configuremap>
